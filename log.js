@@ -3,4 +3,9 @@ function log(param) {
   console.log(param);
 }
 
-module.exports = log;
+function dir(param) {
+  console.log("------------------------------------------");
+  console.dir(param);
+}
+
+module.exports = { log, dir };
